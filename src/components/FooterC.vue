@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>Copyright &copy; 2022</p>
-    <a href="/about">About</a>
+    <router-link go="/about">About</router-link>
   </div>
 </template>
 

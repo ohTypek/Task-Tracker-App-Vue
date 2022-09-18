@@ -21,7 +21,7 @@
     {
       "text": "Kupić mleko",
       "day": "September 19th at 15:00",
-      "reminder": true,
+      "reminder": false,
       "id": "eM9-fJy"
     }
   ]
