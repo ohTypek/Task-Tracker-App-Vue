@@ -3,11 +3,13 @@
     <Header @toggle-add-task="toggleAddTask" title="Task Tracker" :showAddTask="showAddTask" />
     <AddTask v-show="showAddTask" @add-task="addTask" />
     <Tasks :tasks="tasks" @delete-task="deleteTask" @toggle-reminder="toggleReminder"/>
+    <Footer />
   </div>
 </template>
 
 <script>
 import HeaderPart from './components/HeaderC.vue'
+import FooterC from './components/FooterC.vue'
 import TaskC from './components/TasksC.vue'
 import AddTaskC from './components/AddTask.vue'
 
@@ -17,6 +19,7 @@ export default {
     Header: HeaderPart,
     Tasks: TaskC,
     AddTask: AddTaskC,
+    Footer: FooterC,
 },
   data() {
     return {
