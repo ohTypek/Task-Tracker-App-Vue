@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <footer>
     <p>Copyright &copy; 2022</p>
-    <router-link go="/about">About</router-link>
-  </div>
+    <router-link to="/about">O aplikacji</router-link>
+  </footer>
 </template>
 
 <script>
@@ -11,9 +11,9 @@ export default {
 }
 </script>
 
-<style>
-  a {
-    color: #333;
+<style scoped>
+  router-link {
+    color: #1c1c60;
   }
   footer {
     margin-top: 30px;

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <Header @toggle-add-task="toggleAddTask" title="Task Tracker" :showAddTask="showAddTask" />
-    <router-view :showAddTask="showAddTask"></router-view>
+    <Header @toggle-add-task="toggleAddTask" title="Lista Zadań" :showAddTask="showAddTask" />
+      <router-view :showAddTask="showAddTask" />
     <Footer />
   </div>
 </template>
@@ -63,6 +63,7 @@ export default {
     text-decoration: none;
     font-size: 15px;
     font-family: inherit;
+    border-radius: 5px;
   }
 
   .btn:focus {
