@@ -1,7 +1,7 @@
-import VueRouter, { /*createRouter, createWebHistory*/ } from "vue-router"
-import AboutView from '../views/AboutView.vue'
-import HomeView from '../views/AboutView.vue'
 import Vue from 'vue'
+import VueRouter from 'vue-router'
+import AboutView from '../views/AboutView.vue'
+import HomeView from '../views/HomeView.vue'
 
 Vue.use(VueRouter)
 

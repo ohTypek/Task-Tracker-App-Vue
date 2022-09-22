@@ -1,7 +1,7 @@
 <template>
   <header>
     <h1>{{ title }}</h1>
-    <Button v:show="homePage" @btn-click="$emit('toggle-add-task')" :text="showAddTask ? 'Zamknij' : 'Dodaj Zadanie'" :color="showAddTask ? 'red' : 'green' "/>
+    <Button v:if="homePage" @btn-click="$emit('toggle-add-task')" :text="showAddTask ? 'Zamknij' : 'Dodaj Zadanie'" :color="showAddTask ? 'red' : 'green' "/>
   </header>
 </template>
 
@@ -19,9 +19,10 @@ export default {
   },
   computed: {
     homePage() {
-      if (this.$router.currentRoute === '/') {
+      if (this.$router.currentRoute === "/") {
         return true
-      } else {
+      }
+      else {
         return false
       }
     }
